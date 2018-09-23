@@ -1,0 +1,12 @@
+body {
+	display: block;
+	margin: 0;
+}
+
+.nav-head {
+	background-color: #343e4f;
+}
+
+.nav-head .images {
+	margin-left: 20px; 
+}
