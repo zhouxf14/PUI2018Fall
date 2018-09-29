@@ -3,10 +3,196 @@ body {
 	margin: 0;
 }
 
-.nav-head {
-	background-color: #343e4f;
+a {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer !important;
 }
 
-.nav-head .images {
-	margin-left: 20px; 
+.nav-head {
+	/*background-color: #343e4f;*/
+	background-color: #606060;
+	height: 50px;
+/*	display: -webkit-flex;
+    display: flex;*/
+}
+
+.nav-head .half {
+	width: 45%;
+/*	display: -webkit-flex;
+    display: flex;*/
+}
+
+.nav-head .middle {
+	width: 10%;
+}
+
+.half .images {
+	height: 50px;
+}
+
+.nav-head .btn {
+	height: 50px;
+	width: 150px;
+	background-color: #43434c;
+	border: 0;
+	color: #fff;
+	font-size: 20px;
+}
+
+.nav-head .sub-btn {
+	color: #fff;
+	font-size: 10px;
+	background-color: transparent;
+	border: 0;
+}
+
+.nav-head .right-btn {
+	margin-right: 20px;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+.center-parent {
+	display: -webkit-flex;
+    display: flex;
+}
+
+.center {
+	margin: auto;
+}
+
+.vertical-center {
+	margin-bottom: auto;
+	margin-top: auto;
+}
+
+.horizontal-center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.float-right {
+	float: right;
+}
+
+#cart-btn {
+	color: #fff;
+	font-size: 30px;
+	margin-right: 20px;
+}
+
+.product .images {
+	height: 160px;
+}
+
+.sub-nav {
+	background-color: #cccccc;
+	height: 50px;
+}
+
+select {
+	background-color: #fff;
+	color: #969696;
+	height: 20px;
+}
+
+.sub-nav select {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.menu .column {
+    float: left;
+    width: 33.3%;
+}
+
+.column .card {
+	background-color: #fae2ed;
+	margin: 10px;
+	padding-top: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card .box {
+	background-color: #c5b3bb;
+	height: 40px;
+}
+
+.box h3 {
+	color: #fff;
+}
+
+.box h4 {
+	color: #000 !important;
+}
+
+.product-icon {
+	font-size: 40px !important;
+	margin: 15px;
+}
+
+.detail {
+	margin-top: 50px;
+}
+
+.detail .column {
+	float: left;
+}
+
+.detail .box {
+	background-color: #fae2ed;
+	padding: 20px 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	/*width: 500px;*/
+}
+
+.detail >.row {
+	width: 1000px;
+}
+
+.row .left {
+	width: 50%;
+}
+
+.row .right {
+	width: 50%;
+}
+
+.detail .link {
+	font-size: 10px;
+}
+
+.detail .setting {
+	height: 80px;
+}
+
+.detail .setting2 {
+	height: 80px;
+}
+
+.setting .option {
+	margin-right: 10px;
+}
+
+.setting2 .option {
+	margin-right: 68px;
+}
+
+.setting3 {
+	height: 112px;
+}
+
+.detail .btn {
+	height: 40px;
+	width: 230px;
 }
