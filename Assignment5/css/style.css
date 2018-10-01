@@ -136,8 +136,9 @@ select {
 }
 
 .product-icon {
-	font-size: 40px !important;
+	font-size: 30px !important;
 	margin: 15px;
+	color: #43434c;
 }
 
 .detail {
