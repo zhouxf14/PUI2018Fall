@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>BUN BUN BAKE</title>
     <meta charset="UTF-8">
@@ -11,10 +11,10 @@
 <body>
 	<header class="nav-head center-parent">
 		<div class="half center-parent">
-			<img class="images center" src="images/brand.png">
+			<img alt="brandImage" class="images center" src="images/brand.png">
 		</div>
 		<div class="middle">
-			<button class="btn center"><a href="browsing.html">SHOP NOW</a></button>
+			<button class="btn center" type="button" onclick="{location.href='browsing.html'}">SHOP NOW</button>
 		</div>
 		<div class="half center-parent">
 			<div class="center">
@@ -30,14 +30,12 @@
 		</div>
 	</header>
 	<main class="product">
-		<a href="browsing.html"><img src="images/index1.png" width="100%"></a>
-		<div class="center-parent">
-			<div class="center">
-				<img class="images" src="images/index2.png">
-				<img class="images" src="images/index3.png">
-				<img class="images" src="images/index4.png">
-				<img class="images" src="images/index5.png">
-			</div>
+		<a href="browsing.html"><img alt="mainProduct" src="images/index1.png" class="full-width"></a>
+		<div class="center-parent full-width flex-container">
+			<div class="div-inline center"><img alt="mainProduct" class="images" src="images/index2.png"></div>
+			<div class="div-inline center"><img alt="mainProduct" class="images" src="images/index3.png"></div>
+			<div class="div-inline center"><img alt="mainProduct" class="images" src="images/index4.png"></div>
+			<div class="div-inline center"><img alt="mainProduct" class="images" src="images/index5.png"></div>
 		</div>
 	</main>
 </body>
