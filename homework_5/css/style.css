@@ -86,8 +86,11 @@ a {
 }
 
 .product .images {
-	height: auto;
-	width: auto;
+/*	height: auto;
+	width: auto;*/
+	float: left;
+	height: 100%;
+	width: 100%;
 }
 
 .sub-nav {
