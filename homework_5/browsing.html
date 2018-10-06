@@ -3,20 +3,24 @@
 <head>
     <title>BUN BUN BAKE</title>
     <meta charset="UTF-8">
+    <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- This is an external resouce I use for icon in the web page -->
+    <!-- This is an external resouce I use for icons in the web page -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="images/web_icon.png"/>
+    <!-- Icon of the website in the browser -->
+    <link rel="shortcut icon" href="images/web_icon.png"/> 
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/base.js"></script>
 </head>
 
 <body>
+	<!-- This is the common header for every page of BUN BUN BAKE SHOP, which contains name, shopping now button, category links, cart button and sign in button -->
 	<header class="nav-head center-parent">
 		<div class="half">
 			<a href="index.html" class="center-parent"><img class="images center" src="images/brand.png" alt="brandImage"></a>
 		</div>
-		<div class="middle">
-			<button class="btn center" type="button" onclick="{location.href='browsing.html'}">SHOP NOW</button>
-		</div>
+		<button class="btn center middle" type="button" onclick="{location.href='browsing.html'}">SHOP NOW</button>
 		<div class="half center-parent">
 			<div class="center">
 				<button class="sub-btn link">POPULAT</button>
@@ -26,11 +30,13 @@
 			</div>
 			<div class="float-right vertical-center center-parent">
 				<i class="fa fa-shopping-cart" id="cart-btn"></i>
-				<button class="sub-btn right-btn">SIGN IN</button>
+				<button class="sub-btn right-btn" id="signin-btn">SIGN IN</button>
 			</div>
 		</div>
 	</header>
+
 	<main>
+		<!-- filter for show products with different flavors, prices and ratings -->
 		<div class="sub-nav center-parent">
 			<div class="center">
 				<select name="flavor">
@@ -60,6 +66,7 @@
 				</select>
 			</div>
 		</div>
+		<!-- menu for browsing all the products -->
 		<div class="menu">
 			<div class="row">
 				<div class="column">
@@ -68,8 +75,6 @@
 							<div class="center-parent">
 								<img src="images/browsing1.png" alt="productImage" class="horizontal-center productImage">
 							</div>
-						</a>
-						<a href="original.html">
 							<div class="center-parent box">
 								<h3 class="center">ORIGINAL CINNAMON ROLLS</h3>
 							</div>
@@ -87,15 +92,17 @@
 				</div>
 				<div class="column">
 					<div class="card">
-						<div class="center-parent">
-							<img src="images/browsing2.png" alt="productImage" class="horizontal-center productImage">
-						</div>
-						<div class="center-parent box">
-							<h3 class="center">BLACKBERRY CINNAMON ROLLS</h3>
-						</div>
-						<div class="center-parent box">
-							<h4 class="center">$7.99</h4>
-						</div>
+						<a href="blackberry.html">
+							<div class="center-parent">
+								<img src="images/browsing2.png" alt="productImage" class="horizontal-center productImage">
+							</div>
+							<div class="center-parent box">
+								<h3 class="center">BLACKBERRY CINNAMON ROLLS</h3>
+							</div>
+							<div class="center-parent box">
+								<h4 class="center">$7.99</h4>
+							</div>
+						</a>
 						<div class="center-parent btn">
 							<div class="center">
 								<i class="fa fa-gratipay product-icon"></i>
@@ -106,15 +113,17 @@
 				</div>
 				<div class="column">
 					<div class="card">
-						<div class="center-parent">
-							<img src="images/browsing3.png" alt="productImage" class="horizontal-center productImage">
-						</div>
-						<div class="center-parent box">
-							<h3 class="center">WALNUT CINNAMON ROLLS</h3>
-						</div>
-						<div class="center-parent box">
-							<h4 class="center">$12.99</h4>
-						</div>
+						<a href="walnut.html">
+							<div class="center-parent">
+								<img src="images/browsing3.png" alt="productImage" class="horizontal-center productImage">
+							</div>
+							<div class="center-parent box">
+								<h3 class="center">WALNUT CINNAMON ROLLS</h3>
+							</div>
+							<div class="center-parent box">
+								<h4 class="center">$12.99</h4>
+							</div>
+						</a>
 						<div class="center-parent btn">
 							<div class="center">
 								<i class="fa fa-gratipay product-icon"></i>
@@ -127,15 +136,17 @@
 			<div class="row">
 				<div class="column">
 					<div class="card">
-						<div class="center-parent">
-							<img src="images/browsing4.png" alt="productImage" class="horizontal-center productImage">
-						</div>
-						<div class="center-parent box">
-							<h3 class="center">PUMPKIN SPICY CINNAMON ROLLS</h3>
-						</div>
-						<div class="center-parent box">
-							<h4 class="center">$16.99</h4>
-						</div>
+						<a href="pumpkin.html">
+							<div class="center-parent">
+								<img src="images/browsing4.png" alt="productImage" class="horizontal-center productImage">
+							</div>
+							<div class="center-parent box">
+								<h3 class="center">PUMPKIN SPICY CINNAMON ROLLS</h3>
+							</div>
+							<div class="center-parent box">
+								<h4 class="center">$16.99</h4>
+							</div>
+						</a>
 						<div class="center-parent btn">
 							<div class="center">
 								<i class="fa fa-gratipay product-icon"></i>
@@ -146,15 +157,17 @@
 				</div>
 				<div class="column">
 					<div class="card">
-						<div class="center-parent">
-							<img src="images/browsing5.png" alt="productImage" class="horizontal-center productImage">
-						</div>
-						<div class="center-parent box">
-							<h3 class="center">CARAMEL CINNAMON ROLLS</h3>
-						</div>
-						<div class="center-parent box">
-							<h4 class="center">$21.99</h4>
-						</div>
+						<a href="caramel.html">
+							<div class="center-parent">
+								<img src="images/browsing5.png" alt="productImage" class="horizontal-center productImage">
+							</div>
+							<div class="center-parent box">
+								<h3 class="center">CARAMEL CINNAMON ROLLS</h3>
+							</div>
+							<div class="center-parent box">
+								<h4 class="center">$21.99</h4>
+							</div>
+						</a>
 						<div class="center-parent btn">
 							<div class="center">
 								<i class="fa fa-gratipay product-icon"></i>
@@ -165,15 +178,17 @@
 				</div>
 				<div class="column">
 					<div class="card">
-						<div class="center-parent">
-							<img src="images/browsing6.png" alt="productImage" class="horizontal-center productImage">
-						</div>
-						<div class="center-parent box">
-							<h3 class="center">WALNUT CINNAMON ROLLS</h3>
-						</div>
-						<div class="center-parent box">
-							<h4 class="center">$27.99</h4>
-						</div>
+						<a href="walnut2.html">
+							<div class="center-parent">
+								<img src="images/browsing6.png" alt="productImage" class="horizontal-center productImage">
+							</div>
+							<div class="center-parent box">
+								<h3 class="center">WALNUT CINNAMON ROLLS</h3>
+							</div>
+							<div class="center-parent box">
+								<h4 class="center">$27.99</h4>
+							</div>
+						</a>
 						<div class="center-parent btn">
 							<div class="center">
 								<i class="fa fa-gratipay product-icon"></i>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
     <!-- This is an external resouce I use for icons in the web page -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Icon of the website in the browser -->
@@ -17,10 +18,10 @@
 <body>
 	<!-- This is the common header for every page of BUN BUN BAKE SHOP, which contains name, shopping now button, category links, cart button and sign in button -->
 	<header class="nav-head center-parent">
-		<div class="half center-parent">
-			<img alt="brandImage" class="images center" src="images/brand.png">
+		<div class="half">
+			<a href="index.html" class="center-parent"><img alt="brandImage" class="images center" src="images/brand.png"></a>
 		</div>
-		<button class="center btn middle" type="button" onclick="{location.href='browsing.html'}">SHOP NOW</button>
+		<button class="btn center middle" type="button" onclick="{location.href='browsing.html'}">SHOP NOW</button>
 		<div class="half center-parent">
 			<div class="center">
 				<button class="sub-btn link">POPULAT</button>
@@ -30,19 +31,27 @@
 			</div>
 			<div class="float-right vertical-center center-parent">
 				<i class="fa fa-shopping-cart" id="cart-btn"></i>
-				<button class="sub-btn right-btn" id="signin-btn" type="button">SIGN IN</button>
+				<button class="sub-btn right-btn" id="signin-btn">SIGN IN</button>
 			</div>
 		</div>
 	</header>
-	<!-- product images for different types of products -->
-	<main class="product">
-		<a href="browsing.html"><img alt="mainProduct" src="images/index1.png" class="full-width"></a>
-		<!-- links for jumping to popular products, discount products, VIP products and the latest products -->
-		<div class="center-parent full-width flex-container">
-			<div class="div-inline center"><img alt="mainProduct" class="images" src="images/index2.png"></div>
-			<div class="div-inline center"><img alt="mainProduct" class="images" src="images/index3.png"></div>
-			<div class="div-inline center"><img alt="mainProduct" class="images" src="images/index4.png"></div>
-			<div class="div-inline center"><img alt="mainProduct" class="images" src="images/index5.png"></div>
+	<!-- sign in form -->
+	<main>
+		<div class="center-parent signin">
+			<div class="center">
+				<div><img src="images/signin.png" alt="signin"></div>
+				<div class="title">SIGN IN AND YUMMY</div>
+				<form>
+				  <br>
+				  <input type="text" name="username" value="USER NAME" class="textbox">
+				  <br><br>
+				  <input type="text" name="password" value="PASSWORD" class="textbox">
+				  <br><br>
+				  <input type="submit" value="SIGN IN" class="btn">
+				</form> 
+				<!-- link to sign up for new customers -->
+				<p class="link">SIGN UP</p>
+			</div>
 		</div>
 	</main>
 </body>

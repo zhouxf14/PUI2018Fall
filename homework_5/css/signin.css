@@ -1,0 +1,41 @@
+/*style settings for the sign in form*/
+.signin {
+	background-color: #fae2ed;
+	margin-right: 200px;
+	margin-left: 200px;
+	padding-bottom: 100px;
+}
+
+/*style setting for the sign in icon at the top*/
+.signin img {
+	width: 40%;
+	margin: 70px 0 0 0;
+}
+
+.signin .title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 27px;
+	margin: 40px 0 10px 0;
+	color: #43434c;
+}
+
+/*style setting for input box*/
+.signin .textbox {
+	height: 30px;
+	width: 253px;
+	border-width: 3px 3px 3px 3px;
+	border-color: #43434c;
+	font-family: 'Roboto', sans-serif;
+	color: #606060;
+	padding-left: 10px;
+}
+/*style setting for sign in button*/
+.signin .btn {
+	height: 30px;
+	width: 270px;
+	border-width: 3px 3px 3px 3px;
+	border-color: #43434c;
+	background-color: #43434c;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}

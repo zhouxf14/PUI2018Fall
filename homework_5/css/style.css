@@ -1,30 +1,50 @@
+/*for the screen with width less than 950px*/
+@media only screen and (max-width: 950px) {
+	.center .sub-btn {
+		display: none;
+	}
+
+	.nav-head .images {
+		display: none;
+	}
+
+	.nav-head .half {
+		width: auto;
+	}
+
+	.nav-head .middle {
+		width: auto;
+	}
+}
+
 body {
 	display: block;
 	margin: 0;
 }
-
+/*style for all the link*/
 a {
 	color: #fff;
 	text-decoration: none;
 	cursor: pointer !important;
 }
+/*style for all the button*/
+button {
+	cursor: pointer;
+}
 
+/*style for the common header for every page*/
 .nav-head {
-	/*background-color: #343e4f;*/
 	background-color: #606060;
 	height: 50px;
-/*	display: -webkit-flex;
-    display: flex;*/
 }
 
 .nav-head .half {
 	width: 45%;
-/*	display: -webkit-flex;
-    display: flex;*/
 }
 
 .nav-head .middle {
 	width: 10%;
+	background-color: #43434c;
 }
 
 .half .images {
@@ -39,7 +59,7 @@ a {
 	color: #fff;
 	font-size: 20px;
 }
-
+/*links in the header*/
 .nav-head .sub-btn {
 	color: #fff;
 	font-size: 10px;
@@ -56,48 +76,49 @@ a {
 	cursor: pointer;
 }
 
+/*style setting for parent element of elements in center*/
 .center-parent {
 	display: -webkit-flex;
     display: flex;
 }
-
+/*center element*/
 .center {
 	margin: auto;
+	text-align: center;
 }
-
+/*Vertically centered elements*/
 .vertical-center {
 	margin-bottom: auto;
 	margin-top: auto;
 }
-
+/*Horizontally centered elements*/
 .horizontal-center {
 	margin-right: auto;
 	margin-left: auto;
 }
-
+/*float right elements*/
 .float-right {
 	float: right;
 }
-
+/*cart image*/
 #cart-btn {
 	color: #fff;
 	font-size: 30px;
 	margin-right: 20px;
 }
-
+/*product images*/
 .product .images {
-/*	height: auto;
-	width: auto;*/
 	float: left;
 	height: 100%;
 	width: 100%;
 }
-
+/*header*/
 .sub-nav {
 	background-color: #cccccc;
 	height: 50px;
 }
 
+/*style for the filters*/
 select {
 	background-color: #fff;
 	color: #969696;
@@ -159,13 +180,13 @@ select {
 	padding: 20px 10px;
 	font-size: 20px;
 	font-weight: bolder;
-	/*width: 500px;*/
 }
 
 .detail >.row {
 	width: 1000px;
 }
 
+/*for different parts of a row element*/
 .row .left {
 	width: 50%;
 }
@@ -173,7 +194,7 @@ select {
 .row .right {
 	width: 50%;
 }
-
+/*product options in product detail page*/
 .detail .link {
 	font-size: 10px;
 }
@@ -203,11 +224,10 @@ select {
 	width: 230px;
 }
 
+/*to make the divs in one line*/
 .div-inline {
 	display: inline;
 	overflow: hidden;
-/*	overflow: auto;
-	resize: both;*/
 }
 
 .full-width {
@@ -225,4 +245,9 @@ select {
 
 .flex-container {
 	display: flex;
+}
+
+/*for the product images at the bottom of main page*/
+.product .flex-container {
+	background-color: #fae2ed;
 }
