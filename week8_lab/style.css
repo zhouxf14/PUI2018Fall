@@ -10,10 +10,27 @@ body {
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
+    /*font-family: 'Pacifico', cursive;*/
+    color: #000;
 }
 
 #animal-img {
     border: 10px solid navy;
     border-radius: 10px;
+    width: 30%;
+}
+
+#add {
+	background-color: #000;
+	color: #fff;
+	width: 20%;
+	margin: auto;
+	cursor: pointer;
+}
+
+#feedback {
+	background-color: #000;
+	color: #fff;
+	width: 60%
+	margin: auto;
 }

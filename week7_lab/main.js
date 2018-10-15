@@ -2,21 +2,21 @@
 function Cat(name, age) {
   this.name = name;
   this.age = age;
-  this.image = "cat.jpg";
+  this.image = "images/cat.png";
   this.type = "Cat";
 }
 
 function Dog(name, age) {
   this.name = name;
   this.age = age;
-  this.image = "dog.jpg"
+  this.image = "images/dog.png"
   this.type = "Dog";
 }
 
 function Deer(name, age) {
   this.name = name;
   this.age = age;
-  this.image = "deer.jpg"
+  this.image = "images/deer.png"
   this.type = "Deer";
 }
 
