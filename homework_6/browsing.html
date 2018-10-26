@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BUN BUN BAKE</title>
+    <meta charset="UTF-8">
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- This is an external resouce I use for icons in the web page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icon of the website in the browser -->
+    <link rel="shortcut icon" href="images/web_icon.png"/> 
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/browsing.js"></script>
+</head>
+
+<body>
+	<!-- This is the common header for every page of BUN BUN BAKE SHOP, which contains name, shopping now button, category links, cart button and sign in button -->
+	<header class="nav-head center-parent">
+		<div class="half">
+			<a href="index.html" class="center-parent"><img class="images center" src="images/brand.png" alt="brandImage"></a>
+		</div>
+		<button class="btn center middle" type="button" onclick="{location.href='browsing.html'}">SHOP NOW</button>
+		<div class="half center-parent">
+			<div class="center">
+				<button class="sub-btn link">POPULAT</button>
+				<button class="sub-btn link">VIP</button>
+				<button class="sub-btn link">NEW</button>
+				<button class="sub-btn link">PROMOTIONS</button>
+			</div>
+			<div class="float-right vertical-center center-parent">
+				<a href="cart.html"><span id="cart-quantity">0</span><i class="fa fa-shopping-cart" id="cart-btn"></i></a>
+				<button class="sub-btn right-btn" id="signin-btn">SIGN IN</button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- filter for show products with different flavors, prices and ratings -->
+		<div class="sub-nav center-parent">
+			<div class="center">
+				<select name="flavor">
+				  <option value ="all" selected="selected">ALL FLAVORS</option>
+				  <option value ="original">ORIGINAL</option>
+				  <option value="blackberry">BLACKBERRY</option>
+				  <option value="walnut">WALNUT</option>
+				  <option value ="original (Gluten-free)">ORIGINAL(GLUTEN-FREE)</option>
+				  <option value="pumpkin spice">PUMPKIN SPICE</option>
+				  <option value="caramel pecan">CARAMEL PECAN</option>
+				</select>
+				<select name="price">
+				  <option value ="all" selected="selected">ALL PRICES</option>
+				  <option value ="5"> 0 ~ $5 </option>
+				  <option value="10"> $5 ~ $10 </option>
+				  <option value="15"> $10 ~ $15 </option>
+				  <option value ="20"> $15 ~ $20 </option>
+				  <option value="20+"> > $20 </option>
+				</select>
+				<select name="rating">
+				  <option value ="all" selected="selected">ALL RATINGS</option>
+				  <option value ="1"> >= 1 stars </option>
+				  <option value="2"> >= 2 stars  </option>
+				  <option value="3"> >= 3 stars </option>
+				  <option value ="4"> >= 4 stars </option>
+				  <option value="5"> 5 stars </option>
+				</select>
+			</div>
+		</div>
+		<!-- menu for browsing all the products -->
+		<div class="menu">
+			<div class="row">
+				<div class="column">
+					<div class="card">
+						<a href="original.html">
+							<div class="center-parent">
+								<img src="images/original/SUGAR-MILK.png" alt="productImage" class="horizontal-center productImage">
+							</div>
+							<div class="center-parent box">
+								<h3 class="center">ORIGINAL CINNAMON ROLLS</h3>
+							</div>
+							<div class="center-parent box">
+								<h4 class="center">$4.99</h4>
+							</div>
+						</a>
+						<div class="center-parent btn">
+							<div class="center">
+								<i class="fa fa-gratipay product-icon"></i>
+								<i class="fa fa-shopping-cart product-icon add-one"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<a href="blackberry.html">
+							<div class="center-parent">
+								<img src="images/blackberry/SUGAR-MILK.png" alt="productImage" class="horizontal-center productImage">
+							</div>
+							<div class="center-parent box">
+								<h3 class="center">BLACKBERRY CINNAMON ROLLS</h3>
+							</div>
+							<div class="center-parent box">
+								<h4 class="center">$7.99</h4>
+							</div>
+						</a>
+						<div class="center-parent btn">
+							<div class="center">
+								<i class="fa fa-gratipay product-icon"></i>
+								<i class="fa fa-shopping-cart product-icon add-one"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<a href="walnut.html">
+							<div class="center-parent">
+								<img src="images/walnut/DOUBLE-CHOCOLATE.png" alt="productImage" class="horizontal-center productImage">
+							</div>
+							<div class="center-parent box">
+								<h3 class="center">WALNUT CINNAMON ROLLS</h3>
+							</div>
+							<div class="center-parent box">
+								<h4 class="center">$12.99</h4>
+							</div>
+						</a>
+						<div class="center-parent btn">
+							<div class="center">
+								<i class="fa fa-gratipay product-icon"></i>
+								<i class="fa fa-shopping-cart product-icon add-one"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="column">
+					<div class="card">
+						<a href="pumpkin.html">
+							<div class="center-parent">
+								<img src="images/pumpkin/SUGAR-MILK.png" alt="productImage" class="horizontal-center productImage">
+							</div>
+							<div class="center-parent box">
+								<h3 class="center">PUMPKIN SPICY CINNAMON ROLLS</h3>
+							</div>
+							<div class="center-parent box">
+								<h4 class="center">$16.99</h4>
+							</div>
+						</a>
+						<div class="center-parent btn">
+							<div class="center">
+								<i class="fa fa-gratipay product-icon"></i>
+								<i class="fa fa-shopping-cart product-icon add-one"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<a href="caramel.html">
+							<div class="center-parent">
+								<img src="images/caramel/VANILLA-MILK.png" alt="productImage" class="horizontal-center productImage">
+							</div>
+							<div class="center-parent box">
+								<h3 class="center">CARAMEL CINNAMON ROLLS</h3>
+							</div>
+							<div class="center-parent box">
+								<h4 class="center">$21.99</h4>
+							</div>
+						</a>
+						<div class="center-parent btn">
+							<div class="center">
+								<i class="fa fa-gratipay product-icon"></i>
+								<i class="fa fa-shopping-cart product-icon add-one"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<a href="gluten-free.html">
+							<div class="center-parent">
+								<img src="images/gluten-free/DOUBLE-CHOCOLATE.png" alt="productImage" class="horizontal-center productImage">
+							</div>
+							<div class="center-parent box">
+								<h3 class="center">GLUTEN-FREE CINNAMON ROLLS</h3>
+							</div>
+							<div class="center-parent box">
+								<h4 class="center">$27.99</h4>
+							</div>
+						</a>
+						<div class="center-parent btn">
+							<div class="center">
+								<i class="fa fa-gratipay product-icon"></i>
+								<i class="fa fa-shopping-cart product-icon add-one"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>

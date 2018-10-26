@@ -1,0 +1,269 @@
+/*for the screen with width less than 950px*/
+@media only screen and (max-width: 950px) {
+	.center .sub-btn {
+		display: none;
+	}
+
+	.nav-head .images {
+		display: none;
+	}
+
+	.nav-head .half {
+		width: auto;
+	}
+
+	.nav-head .middle {
+		width: auto;
+	}
+}
+
+body {
+	display: block;
+	margin: 0;
+}
+/*style for all the link*/
+a {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer !important;
+}
+/*style for all the button*/
+button {
+	cursor: pointer;
+}
+
+/*style for the common header for every page*/
+.nav-head {
+	background-color: #606060;
+	height: 50px;
+}
+
+.nav-head .half {
+	width: 45%;
+}
+
+.nav-head .middle {
+	width: 10%;
+	background-color: #43434c;
+}
+
+.half .images {
+	height: 50px;
+}
+
+.nav-head .btn {
+	height: 50px;
+	width: 150px;
+	background-color: #43434c;
+	border: 0;
+	color: #fff;
+	font-size: 20px;
+}
+/*links in the header*/
+.nav-head .sub-btn {
+	color: #fff;
+	font-size: 10px;
+	background-color: transparent;
+	border: 0;
+}
+
+.nav-head .right-btn {
+	margin-right: 20px;
+}
+
+.link {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*style setting for parent element of elements in center*/
+.center-parent {
+	display: -webkit-flex;
+    display: flex;
+}
+/*center element*/
+.center {
+	margin: auto;
+	text-align: center;
+}
+/*Vertically centered elements*/
+.vertical-center {
+	margin-bottom: auto;
+	margin-top: auto;
+}
+/*Horizontally centered elements*/
+.horizontal-center {
+	margin-right: auto;
+	margin-left: auto;
+}
+/*float right elements*/
+.float-right {
+	float: right;
+}
+/*cart image*/
+#cart-btn {
+	color: #fff;
+	font-size: 30px;
+	margin-right: 20px;
+}
+/*product images*/
+.product .images {
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+/*header*/
+.sub-nav {
+	background-color: #cccccc;
+	height: 50px;
+}
+
+/*style for the filters*/
+select {
+	background-color: #fff;
+	color: #969696;
+	height: 20px;
+}
+
+.sub-nav select {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.menu .column {
+    float: left;
+    width: 33.3%;
+}
+
+.column .card {
+	background-color: #fae2ed;
+	margin: 10px;
+	padding-top: 30px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card .box {
+	background-color: #c5b3bb;
+	height: 40px;
+}
+
+.box h3 {
+	color: #fff;
+}
+
+.box h4 {
+	color: #000 !important;
+}
+
+.product-icon {
+	font-size: 30px !important;
+	margin: 15px;
+	color: #43434c;
+}
+
+.detail {
+	margin-top: 50px;
+}
+
+.detail .column {
+	float: left;
+}
+
+.detail .box {
+	background-color: #fae2ed;
+	padding: 20px 10px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.detail >.row {
+	width: 1000px;
+}
+
+/*for different parts of a row element*/
+.row .left {
+	width: 50%;
+}
+
+.row .right {
+	width: 50%;
+}
+/*product options in product detail page*/
+.detail .link {
+	font-size: 10px;
+}
+
+.detail .setting {
+	height: 80px;
+}
+
+.detail .setting2 {
+	height: 80px;
+}
+
+.setting .option {
+	/*margin-right: 10px;*/
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.setting2 .option {
+	margin-right: 58px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.setting3 {
+	height: 112px;
+}
+
+.detail .btn {
+	height: 40px;
+	width: 230px;
+}
+
+/*to make the divs in one line*/
+.div-inline {
+	display: inline;
+	overflow: hidden;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.productImage {
+	 width: 80%;
+	 height: 80%; 
+}
+
+.btn {
+	cursor: pointer;
+}
+
+.flex-container {
+	display: flex;
+}
+
+/*for the product images at the bottom of main page*/
+.product .flex-container {
+	background-color: #fae2ed;
+}
+
+.active {
+	color: #fff;
+	background-color: #000;
+	padding: 5px;
+}
+
+#cart-quantity {
+	font-size: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+}

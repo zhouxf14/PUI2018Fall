@@ -65,9 +65,21 @@ function generateRandomAge() {
 $(document).ready(function() {
 
   // generate a random animal when the document opens
+  // if (localStorage.getItem("animalSaved") == Null) {
+  //   var animal = generateRandomAnimal();
+  // } else {
+  //   var animal = localStorage.getItem("animalSaved");
+  // }
   var animal = generateRandomAnimal();
   // update the page based on the animal properties
   $("#animal-properties").text(animal.name + "  " + animal.age + "years old");
   $("#animal-img").attr("src", animal.image);
+  $(document).on("click", "#add", function() {
+    var animalSaved;
+    localStorage.setItem("animalSaved", JSON.stringify(animal));
+    // console.log(animalSaved);
+    console.log(JSON.parse(localStorage.getItem("animalSaved")));
+    $("#feedback").text("Animal Saved: " + localStorage.getItem("animalSaved"));
+  });
 
 });
