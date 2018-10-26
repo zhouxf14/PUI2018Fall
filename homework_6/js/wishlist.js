@@ -12,7 +12,6 @@ $(document).ready(function() {
 
 	$(".delete-btn").click(function() {
 		var i = parseInt($(this).parents(".wish-item").attr("id"));
-		// console.log(i);
 		var wish = wish_list[i];
 		wish_list.splice(i, 1);
 		// localStorage.removeItem("item_list");

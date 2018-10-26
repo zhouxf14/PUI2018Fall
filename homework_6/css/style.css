@@ -287,3 +287,22 @@ select {
 	margin-left: 5px;
 	font-size: 15px;
 }
+
+/*.carousel {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}*/
+
+.similar-products img {
+	width: 20%;
+}
+
+.similar-products .fa {
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.similar-products {
+	margin-top: 30px;
+}
