@@ -55,5 +55,6 @@ $(document).ready(function() {
 		localStorage.setItem("item_list", JSON.stringify(item_list));
 		// console.log(JSON.parse(localStorage.getItem("item_list")));
 	});
+
 })
 
