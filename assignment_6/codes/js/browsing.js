@@ -1,5 +1,7 @@
-$(document).ready(function() {
+// this is for the interaction in thr products browsing page
 
+$(document).ready(function() {
+// object for items
 	function Item(flavor, glazing, quantity, single, total, image_path) {
 		this.flavor = flavor,
 		this.glazing = glazing,
@@ -8,7 +10,7 @@ $(document).ready(function() {
 		this.total = total,
 		this.image_path = image_path
 	}
-
+// event after clicking the add to shoppping cart button
 	$(".add-one").click(function() {
 		var item_flavor = $(this).parents(".card").find(".flavor").text();
 		var item_galzing = $(this).parents(".card").find("img").attr("alt");
@@ -22,7 +24,6 @@ $(document).ready(function() {
 			item_list = new Array();
 		}
 
-
 		var item = new Item(item_flavor, item_galzing, item_quantity, item_price, item_price, image_path);
 
 		$("#cart-quantity").text(cart_update);
@@ -32,6 +33,7 @@ $(document).ready(function() {
 		localStorage.setItem("item_list", JSON.stringify(item_list));
 	});
 
+//event after clicking the add to wishlist button
 	$(".wish-one").click(function() {
 		// if($(this).parent().hasClass(".wished")) {
 		// 	alert("It is already in your Wishlist.");

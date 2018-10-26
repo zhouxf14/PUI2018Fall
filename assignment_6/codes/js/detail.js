@@ -1,3 +1,4 @@
+// this part is for the interaction in the detail page.
 $(document).ready(function() {
 	var single = parseFloat($("#price").text());
 	var image_path = $("#roll-image")[0].src; 
@@ -70,6 +71,7 @@ $(document).ready(function() {
 		alert("This item has been added into your wishlist successfully!")
 	});
 
+	// the following works for a carousel for the bonus point.
 	var max = 8;
 	$(".fa-chevron-right").click(function() {
 		var original_last_path = $("#4")[0].src;

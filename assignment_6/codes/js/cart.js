@@ -1,4 +1,6 @@
+// this part is for the interaction in the shopping cart page
 $(document).ready(function() {
+	// to store all the items in the shopping cart
 	var item_list = JSON.parse(localStorage.getItem("item_list"));
 
 	if (item_list.length <= 0 ) {
@@ -19,6 +21,7 @@ $(document).ready(function() {
 		this.image_path = image_path
 	}
 
+	// this is for the event after clicking the "delete" button in the shopping cart page
 
 	$(".delete-btn").click(function() {
 		// var flavor = $(this).parents(".cart-item").find(".cart-flavor").text();
@@ -47,6 +50,7 @@ $(document).ready(function() {
 		window.location.reload();
 	});
 
+	// this part is to move the selected item to the wishlist and delete it from the shopping cart list
 	$(".move-to-fav").click(function() {
 		var wish_flavor = $(this).parents(".cart-item").find(".cart-flavor").text();
 		var wish_galzing = $(this).parents(".cart-item").find(".cart-glazing").text();

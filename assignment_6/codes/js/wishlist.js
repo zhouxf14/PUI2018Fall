@@ -1,3 +1,4 @@
+// this part works for the functional wishlist for the bonus point
 $(document).ready(function() {
 	var wish_list = JSON.parse(localStorage.getItem("wish_list"));
 	if (wish_list.length <= 0 ) {
