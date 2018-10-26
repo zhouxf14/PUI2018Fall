@@ -17,4 +17,7 @@ $(document).ready(function() {
 		var cart_num = 0;
 	}
 	// var cart_num = parseInt($("#cart-quantity").text());
+	$(".wishlist").click(function() {
+		location.href = "wishlist.html";
+	});
 })

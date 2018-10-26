@@ -132,13 +132,25 @@ select {
 
 .menu .column {
     float: left;
-    width: 33.3%;
+    width: 50%;
 }
 
 .column .card {
 	background-color: #fae2ed;
-	margin: 10px;
+	width: 70%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 	padding-top: 30px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
 }
 
 /* Clear floats after the columns */
@@ -168,7 +180,7 @@ select {
 }
 
 .detail {
-	margin-top: 50px;
+	margin-top: 15px;
 }
 
 .detail .column {
@@ -265,4 +277,14 @@ select {
 #cart-quantity {
 	font-size: 10px;
 	margin-right: 0px;
+}
+
+.wishlist {
+	color: #fff;
+	/*margin-right: 20px;*/
+}
+
+.wishlist .fa-gratipay {
+	margin-left: 5px;
+	font-size: 15px;
 }

@@ -24,7 +24,7 @@ $(document).ready(function() {
 		var item = new Item(item_flavor, item_galzing, item_quantity, item_price, item_price, image_path);
 
 		$("#cart-quantity").text(cart_update);
-		localStorage.setItem("cart_num", JSON.parse(cart_update));
+		localStorage.setItem("cart_num", JSON.stringify(cart_update));
 
 		item_list.push(item);
 		localStorage.setItem("item_list", JSON.stringify(item_list));

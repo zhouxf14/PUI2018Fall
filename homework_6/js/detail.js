@@ -53,6 +53,7 @@ $(document).ready(function() {
 		var item = new Item(flavor, glazing, quantity, single, total, image_path);
 		item_list.push(item);
 		localStorage.setItem("item_list", JSON.stringify(item_list));
+		alert("This item has been added into shopping cart successfully!")
 		// console.log(JSON.parse(localStorage.getItem("item_list")));
 	});
 
