@@ -5,7 +5,7 @@ $(document).ready(function() {
 	} else {
 		for (var index in wish_list) {
 			wish = wish_list[index];
-			$('<div class="wish-item row" id="' + index + '"><div class="inline"><div class="wish-flavor">' + wish["flavor"] + '</div><div>Glazing: <span class="wish-glazing">' + wish["glazing"] + '</span></div><div class="wish-quantity">Quatity: <span>' + wish["quantity"] + '</span></div><div class="wish-total">Price: $<span>' + wish["total"] + '</span></div></div><img src="' + wish["image_path"] + '"" class="wish-image inline"><div class="btns"><span class="delete-btn btn">DELETE</span><span class="add-to-cart btn">ADD TO CART</span></div>').appendTo($("#wish-main"));
+			$('<div class="wish-item row" id="' + index + '"><div class="inline"><div class="wish-flavor">' + wish["flavor"] + '</div><div>Glazing: <span class="wish-glazing">' + wish["glazing"] + '</span></div><div class="wish-quantity">Quatity: <span>' + wish["quantity"] + '</span></div><div class="wish-total">Price: $<span>' + wish["total"] + '</span></div></div><img src="' + wish["image_path"] + '"" class="wish-image inline"><div class="btns"><span class="delete-btn btn">DELETE</span></div>').appendTo($("#wish-main"));
 		}
 	}
 
