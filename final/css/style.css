@@ -1,0 +1,81 @@
+@media only screen and (max-width: 325px) {
+	.hide-on-xsmall-only, .hide-on-xsmall-and-down {
+		display: none !important;
+	}
+/*	.carousel {
+		height: 100px;
+	}*/
+	.carousel .carousel-item {
+		height: 80px;
+		width: 80px;
+	}
+}
+@media only screen and (min-width: 325px) and (max-width: 600px) {
+/*	.carousel {
+		height: 200px;
+	}*/
+	.carousel .carousel-item {
+		height: 160px;
+		width:  160px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.timeline {
+		display: none;
+	}
+	.timeline_s {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	.timeline {
+		display: block;
+	}
+	.timeline_s {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+/*	.carousel {
+		height: 400px;
+	}*/
+	.carousel .carousel-item {
+		height: 300px;
+		width: 300px;
+	}
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1201px)  {
+/*	.carousel {
+		height: 600px;
+	}*/
+	.carousel .carousel-item {
+		height: 350px;
+		width: 350px;
+	}
+}
+
+@media only screen and (min-width: 1201px) {
+/*	.carousel {
+		height: 650px;
+	}*/
+	.carousel .carousel-item {
+		height: 450px;
+		width: 450px;
+	}
+}
+
+a {
+	cursor: pointer;
+}
+
+#nav-mobile {
+	margin-left: 20px;
+}
+
+.invisable {
+	display: none;
+}

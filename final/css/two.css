@@ -1,0 +1,139 @@
+/*body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}*/
+
+.banner {
+/*  padding-right: 100px;
+  padding-left: 100px;*/
+  height: 300px;
+  /*background-color: #111116;*/
+  background-color: #4149a1;
+}
+.anim, .anim svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.anim path {
+  stroke-width: 2;
+}
+
+nav {
+  /*background-color: #111116;*/
+  background-color: #4149a1;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.fancy path {
+  fill: none;
+  stroke: black;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#timelineParameters {
+  margin: auto;
+}
+
+.title_image {
+  background-image: url("../images/step2_hover.png");
+  /*background-color: #fff;*/
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #4149a1;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  top: 0;
+  width: 400px;
+  margin-left: 30px;
+  font-size: 20px;
+  color: #4149a1;
+  /*padding: 15px;*/
+  /*background: #F45B69;*/
+}
+
+.tips {
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  width: 100%;
+  font-size: 42px;
+  /*color: #fff;*/
+  color: #4149a1;
+}
+
+.preguide {
+  color: #d4d4e4;
+  text-align: center;
+  font-size: 35px;
+}
+
+.btn-list .btn-floating {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #4149a1;
+}
+
+#cylinder .btn-floating {
+  /*width: 20%;*/
+  margin-right: 80px;
+  margin-bottom: 50px;
+  background-color: #4149a1;
+}
+
+#cylinder .btn-floating a {
+  color: #fff;
+}
+
+#cylinder .card {
+  /*padding-top: 50px;*/
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#cubes {
+  background-color: #d3d7ff;
+}
+
+#guideline ul {
+   margin-top: 0; 
+   margin-bottom: 0;
+}

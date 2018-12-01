@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/two.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/rotatecube.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>VISED</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo center">VISED</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="guideline">
+    <div class="title_image"></div>
+    <section class="timeline">
+      <ul>
+        <li><div>Cubes</div></li>
+        <li><div>Cylinders</div></li>
+        <!-- <li><div>Complex 3D objects</div></li> -->
+      </ul>
+    </section>
+  </div>
+
+  <div id="cubes">
+    <div class="tips">CUBES</div>
+    <!-- <div class="tips">Draw a cube from different perspectives</div> -->
+    <div class="cube">
+      <ul class="cube_still">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+      </ul>
+      <ul class="cube_rotate invisable">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+      </ul>
+      <div class="btn-list">
+        <div class="btn-floating btn-large pulse" id="top">TOP</div>
+        <div class="btn-floating btn-large pulse" id="down">DOWN</div>
+        <div class="btn-floating btn-large pulse" id="left">LEFT</div>
+        <div class="btn-floating btn-large pulse" id="right">RIGHT</div>
+        <div class="btn-floating btn-large pulse" id="front">FRONT</div>
+        <div class="btn-floating btn-large pulse" id="back">BACK</div>
+        <div class="btn-floating btn-large pulse" id="play">PLAY</div>
+        <div class="btn-floating btn-large pulse invisable" id="pause">PAUSE</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cylinder">
+    <div class="tips">CYLINDERS</div>
+    <div class="row">
+      <div class="col xl3 offset-xl3 l3 offset-l3 m5 offset-m1 s6">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/c1.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">BASIS<i class="material-icons right">more_vert</i></span>
+            <!-- <p><a href="#">This is a link</a></p> -->
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">BASIS<i class="material-icons right">close</i></span>
+            <p>Cylinders can be drawn from cubes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col xl3 l3 s6 m5">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/c2.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">OBSERVATION<i class="material-icons right">more_vert</i></span>
+            <!-- <p><a href="#">This is a link</a></p> -->
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">OBSERVATION<i class="material-icons right">close</i></span>
+            <p>Observe a glass from different perspectives.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col xl3 offset-xl3 l3 offset-l3 m5 offset-m1 s6">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/c3.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">PERSPECTIVE<i class="material-icons right">more_vert</i></span>
+            <!-- <p><a href="#">This is a link</a></p> -->
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">PERSPECTIVE<i class="material-icons right">close</i></span>
+            <p>Sketch a cylinder from different perspectives.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col xl3 l3 s6 m5">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/c4.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">PLAY AROUND<i class="material-icons right">more_vert</i></span>
+            <!-- <p><a href="#">This is a link</a></p> -->
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">PLAY AROUND<i class="material-icons right">close</i></span>
+            <p>Play around with cylinders by cutting them up.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-floating btn-large pulse right"><a href="three.html">NEXT</a></div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/base.js"></script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/two.js"></script>
+</body>
+
+</html>

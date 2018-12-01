@@ -1,0 +1,92 @@
+nav {
+  /*background-color: #111116;*/
+  background-color: #4149a1;
+}
+
+#guideline a {
+	color: #4149a1;
+}
+
+#timelineParameters {
+  margin: auto;
+}
+
+.title_image {
+  background-image: url("../images/step3_hover.png");
+  /*background-color: #fff;*/
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #4149a1;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  top: 0;
+  width: 400px;
+  margin-left: 30px;
+  font-size: 20px;
+  color: #4149a1;
+  /*padding: 15px;*/
+  /*background: #F45B69;*/
+}
+
+#guideline ul {
+   margin-top: 0; 
+   margin-bottom: 0;
+}
+
+.tips {
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  width: 100%;
+  font-size: 42px;
+  /*color: #fff;*/
+  color: #4149a1;
+}
+
+.flow .btn-floating {
+	/*float: right;*/
+	margin-left: 20px;
+}
+
+.showcase {
+	width: 500px;
+	height: 375px;
+	/*height: 100%;*/
+	background-image: url("../images/witch/0.jpg");
+	margin: 0 auto 80px auto;
+}
+
+.showcase2 {
+	width: 500px;
+	height: 375px;
+	/*height: 100%;*/
+	background-image: url("../images/desk/0.jpg");
+	margin: 0 auto 80px auto;
+}
