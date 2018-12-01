@@ -31,6 +31,7 @@ $(document).ready(function() {
 		$(".cube_rotate").toggleClass("invisable");
 		$("#play").toggleClass("invisable");
 		$("#pause").toggleClass("invisable");
+		$(".cube_still").css("transform", "rotateX(-30deg) rotateY(-60deg) rotateZ(0deg)");
 	});
 
 	$('#top').click(function() {
